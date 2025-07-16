@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'MiFuentR';
+    src: url("../tip/Raleway/static/Raleway-Black.ttf");
+}
+
+/* Nav */
+#menu{
+    background-color: #ffffff;
+    border: 2px solid red;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.nav-menu{
+display: flex;
+gap: 20px;
+list-style: none;
+}
+
+.nav-menu {
+    display: flex
+;
+    gap: 24px;
+}
+
+@media (max-width: 700px){
+    .nav-menu{
+    display: none;
+    }
+}
+
+body {
+    font-family: 'MiFuenteR';
+    line-height: 1.6;
+    color: #000000;
+    background-color: #ECF1F8;
+}
+
