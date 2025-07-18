@@ -1,47 +1,152 @@
+/* Reset */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Global Styles */
+
+
+/* Fonts */
+
 @font-face {
-    font-family: 'MiFuentR';
-    src: url("../tip/Raleway/static/Raleway-Black.ttf");
+    font-family: 'RalewayBold';
+    src: url(tip/Raleway/Raleway-Bold.ttf) format('truetype');
 }
 
-/* Nav */
-#menu{
-    background-color: #ffffff;
+@font-face {
+    font-family: 'RalewaySemibold';
+    src: url(/tip/Raleway/Raleway-SemiBold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'FontText';
+    src: url(tip/Be_Vietnam_Pro/BeVietnamPro-Medium.ttf) format('truetype');
+}
+
+
+/* Header style */
+
+.header {
+  background-color: #ffffff;
+  padding: 1rem 0;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.logo {
+    font-family: "RalewayBold", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: #315280;
     border: 2px solid red;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
-
-.nav-menu{
-display: flex;
-gap: 20px;
-list-style: none;
+.logo-subtitle {
+    font-family: "RalewaySemibold", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 26px;
+    color: #315280;
+    border: 2px solid red;
 }
+
 
 .nav-menu {
-    display: flex
-;
-    gap: 24px;
+    display: flex;
+    gap: 20px;
+    list-style: none;
 }
 
-@media (max-width: 700px){
-    .nav-menu{
-    display: none;
-    }
+.nav-link {
+    font-family: "RalewaySemibold", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: #315280;
+    transition: color 0.2s, transform 0.2s;
+    text-decoration: none; 
+    display: inline-block;
+    border: 2px solid red;
 }
 
-body {
-    font-family: 'MiFuenteR';
-    line-height: 1.6;
-    color: #000000;
-    background-color: #ECF1F8;
+.nav-link:hover {
+    color: #4272b5;
+    transform: scale(1.1);
 }
 
+
+.burger-menu {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .burger-menu {
+    display: block;
+    font-size: 2rem; 
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    color: #315280;     
+  }
+  .nav-menu {
+    display: none;  
+  }
+}
+
+
+
+/* Home style */
+
+#home {
+    background: linear-gradient(111deg,
+            rgba(145, 171, 208, 0.9) 50%,
+            rgba(52, 85, 131, 0.81) 100%);
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.profile-image {
+    width: 325px;
+    height: 250px;
+    object-fit: fill;
+    margin-bottom: 2rem;
+    border-radius: 50px;
+}
+
+.home-title {
+    font-family: 'FontTitles', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 40px;
+    margin-bottom: 2rem;
+}
+
+.home-subtitle {
+    display: block;
+    font-size: 32px;
+    margin-top: 2rem;
+}
+
+.social-links {
+    display: grid;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.social-links img {
+    width: 40px;
+    height: 40px;
+}

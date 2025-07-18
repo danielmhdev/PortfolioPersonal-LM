@@ -1,36 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Daniel Martin Hernandez">
-    <meta name="description" content="Portfolio personal, DAM(Desarrollo de Aplicaciones Multiplataformas), proyectos y experiencia profesional">
+    <meta name="description"
+        content="Portfolio personal, DAM(Desarrollo de Aplicaciones Multiplataformas), proyectos y experiencia profesional">
     <meta name="keywords" content="Portfolio personal, DAM, Desarrollador, HTML, CSS">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="/image/x-icon" href="/img/Icono Pestaña.svg">
     <title>Portfolio DAM - danielmhdev</title>
-</head> 
+</head>
+
 <body>
     <!--Navigation-->
-    <header class="cabecera">
-        <a href="#" id="burger" class="burger-menu">☰</a>
-        <nav id="menu">
-            <h1>danielmhdev / Portfolio</h1>
+    <header class="header">
+        <nav class="header-content">
+            <a href="#" class="burger-menu">☰</a>
+            <h1 class="logo">danielmhdev <span class="logo-subtitle"> / Portfolio</span></h1>
             <ul class="nav-menu">
-                <li><a href="#inicio" class="nav-link">Inicio</a></li>
-                <li><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
-                <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
-                <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
-                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                <li><a href="#inicio" class="nav-link">INICIO</a></li>
+                <li><a href="#sobre-mi" class="nav-link">SOBRE MÍ</a></li>
+                <li><a href="#habilidades" class="nav-link">HABILIDADES</a></li>
+                <li><a href="#proyectos" class="nav-link">PROYECTOS</a></li>
+                <li><a href="#contacto" class="nav-link">CONTACTO</a></li>
             </ul>
         </nav>
     </header>
+
+
     <main>
-        <div><img src="img/Main Foto.png" alt="Chico sentado con un ordenador"></div>
-        <div id="inicio">
-            <h1>Hei! Soy Daniel Martín Hernández</h1>
-            <h2>Enfermero y estudiante de DAM</h2>
-        </div>
+        <section id="home">
+            <div><img class="profile-image" src="img/Main Foto.png" alt="Chico sentado con un ordenador"></div>
+            <div>
+                <h2 class="home-title">
+                    Hei! Soy Daniel Martín Hernández
+                    <span class="home-subtitle">Desarrollador | Enfermero | Data Analyst</span>
+                </h2>
+            </div>
+
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/daniel-martin-hernandez-a439422a8/"><img
+                        src="img/linkedin-brands white.svg" alt="Linkedin icon"></a>
+                <a href="https://github.com/danielmhdev"><img src="img/github-brands white.svg" alt="github icon"></a>
+                <a href="#contacto"><img src="img/envelope-solid white.svg" alt="email"></a>
+            </div>
+        </section>
 
         <div id="sobre-mi">
             <h2>Sobre Mi</h2>
@@ -42,13 +58,23 @@
 
         </div>
 
-         <div id="proyectos">
+        <div id="proyectos">
             <h2>Mis Proyesctos</h2>
 
         </div>
 
         <div id="contacto">
             <h2>Contacto</h2>
+
+            <form class="contact-form">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required />
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit" class="submit-btn">Enviar</button>
+            </form>
 
         </div>
     </main>
@@ -57,6 +83,10 @@
     <footer>
         <p>&COPY; 2025 Daniel Martín Hernández - Todos los derechos reservados</p>
     </footer>
-    
+
+    <script src="js/javascript.js"></script>
+
+
 </body>
+
 </html>
