@@ -50,7 +50,7 @@
     margin-bottom: 2rem;
 }
 
-.subsection4-title{
+.subsection4-title {
     font-family: "RalewayBold", Helvetica, Arial, sans-serif;
     font-weight: 500;
     color: #315280;
@@ -186,7 +186,7 @@
     height: 40px;
 }
 
-/* About Me Section*/
+/*About Me Section*/
 
 #about-content {
     position: relative;
@@ -226,4 +226,116 @@
     font-family: 'FontText', Arial, Helvetica, sans-serif;
     font-size: 28px;
     max-width: 600px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+    padding-left: 0;
+    margin: 0 auto;
+    border: 2px solid red;
+}
+
+#skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.subsection4-title {
+    font-family: 'FontTitles', Arial, sans-serif;
+    background: #f5f6fa;
+    color: #315280;
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    text-align: center;
+}
+
+/*My Proyect section*/
+
+#projects {
+    background-color: #eff3f9;
+    border: 2px solid red;
+    padding-bottom: 2rem;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.card {
+    background: #ECF1F8;
+    border-radius: 1rem;
+    width: 260px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    padding: 1.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+     border: 2px solid red;
+
+}
+
+.card:hover {
+    transform: translateY(-8px) scale(1.025);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.imgProyect {
+    width: 100%;
+    max-width: 180px;
+    height: 140px;
+    object-fit: fill;
+    border-radius: 0.7rem;
+    margin-bottom: 1rem;
+        border: 2px solid red;
+
+}
+
+.card h3 {
+    color: #315280;
+    margin-top: 0.5rem;
+    margin-bottom: 0.7rem;
+    font-size: 1.25rem;
+    text-align: center;
+        border: 2px solid red;
+
+}
+
+.about-textP {
+    color: #000000;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    min-height: 48px;
+        border: 2px solid red;
+
+}
+
+.card a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #315280;
+    border-radius: 100px;
+    padding: 0.5rem 0.9rem;
+    text-decoration: none;
+        border: 2px solid red;
+
+}
+
+.card a:hover {
+    background: #1f3b62;
+}
+
+.card a img {
+    width: 30px;
+    height: 30px;
 }
