@@ -1,7 +1,7 @@
 //MENU HAMBURGUESA
 
-let lanzador = ".burger-menu";
-let desplegable = ".nav-menu";
+let lanzador = "#enlace-burger";
+let desplegable = "#menu";
 let despliegaClase = "nav-displayed";
 
 function nav() {

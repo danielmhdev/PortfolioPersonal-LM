@@ -16,19 +16,16 @@
 <body>
     <!--Navigation-->
     <header class="header">
-        <nav class="header-content">
-            <h1 class="logo">danielmhdev <span class="logo-subtitle"> / Portfolio</span></h1>
-            <a href="#" class="burger-menu">&#9776;</a>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">INICIO</a></li>
-                <li><a href="#about-me" class="nav-link">SOBRE MÍ</a></li>
-                <li><a href="#skills" class="nav-link">HABILIDADES</a></li>
-                <li><a href="#projects" class="nav-link">PROYECTOS</a></li>
-                <li><a href="#contact" class="nav-link">CONTACTO</a></li>
-            </ul>
+        <h1 class="logo">danielmhdev <span class="logo-subtitle"> / Portfolio</span></h1>
+        <a href="#" id="enlace-burger" class="burger-menu">&#9776;</a>
+        <nav id = "menu" class="nav-menu">
+                <a href="#home" class="nav-link">INICIO</a>
+                <a href="#about-me" class="nav-link">SOBRE MÍ</a>
+                <a href="#skills" class="nav-link">HABILIDADES</a>
+                <a href="#projects" class="nav-link">PROYECTOS</a>
+                <a href="#contact" class="nav-link">CONTACTO</a>
         </nav>
     </header>
-
 
     <main>
         <section id="home">
@@ -117,32 +114,42 @@
             <div class="cards-container">
                 <div class="card">
                     <img class="imgProyect" src="img/chico ordenador dudas.png" alt="Imagen del Proyecto 1" />
-                    <h3>Proyecto 1</h3>
-                    <p class="about-textP">Descricipción del proyecto</p>
+                    <h3>Gestor de Tareas Personal</h3>
+                    <p class="about-textP">Aplicación de escritorio que permite crear, editar y organizar tareas
+                        diarias, asignar prioridades y marcar tareas completadas. Incluye búsqueda por fechas y
+                        categorías. Proyecto realizado en Java con interfaz gráfica usando JavaFX y almacenamiento local
+                        con SQLite.</p>
                     <a class="github_icon" href="https://github.com/danielmhdev"><img src="img/github-brands white.svg"
                             alt="github icon"></a>
                 </div>
 
                 <div class="card">
                     <img class="imgProyect" src="img/chico ordenador dudas.png" alt="Imagen del Proyecto 3" />
-                    <h3>Proyecto 2</h3>
-                    <p class="about-textP">Descricipción del proyecto</p>
+                    <h3>Agenda de Contactos</h3>
+                    <p class="about-textP">App móvil desarrollada con Flutter que permite almacenar contactos personales
+                        o profesionales, con campos para nombre, teléfono, email, foto y notas. Incluye búsqueda rápida,
+                        filtros y edición de la agenda. Los datos se guardan localmente utilizando una base de datos
+                        SQLite.</p>
                     <a class="github_icon" href="https://github.com/danielmhdev"><img src="img/github-brands white.svg"
                             alt="github icon"></a>
                 </div>
 
                 <div class="card">
                     <img class="imgProyect" src="img/chico ordenador dudas.png" alt="Imagen del Proyecto 3" />
-                    <h3>Proyecto 3</h3>
-                    <p class="about-textP">Descricipción del proyecto</p>
+                    <h3>Control de Inventario para Pequeños Negocios</h3>
+                    <p class="about-textP">Aplicación de escritorio para gestión de inventarios, registro de productos,
+                        entradas y salidas de stock y generación de reportes sencillos en PDF. Implementada en C# y
+                        .NET, con autenticación básica de usuarios y acceso a base de datos MySQL.</p>
                     <a class="github_icon" href="https://github.com/danielmhdev"><img src="img/github-brands white.svg"
                             alt="github icon"></a>
                 </div>
 
                 <div class="card">
                     <img class="imgProyect" src="img/chico ordenador dudas.png" alt="Imagen del Proyecto 4" />
-                    <h3>Proyecto 4</h3>
-                    <p class="about-textP">Descricipción del proyecto</p>
+                    <h3>Lector de Noticias RSS</h3>
+                    <p class="about-textP">Programa multiplataforma (Java o Python) que permite agregar fuentes RSS,
+                        mostrar noticias actualizadas en una interfaz simple y marcar artículos como favoritos.
+                        Incluye almacenamiento de preferencias y estado de lectura.</p>
                     <a class="github_icon" href="https://github.com/danielmhdev"><img src="img/github-brands white.svg"
                             alt="github icon"></a>
                 </div>
@@ -178,7 +185,7 @@
                     <input type="text" id="name" name="name" required />
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" required />
-                     <label for="name">Asunto:</label>
+                    <label for="name">Asunto:</label>
                     <input type="text" id="Asunto" name="Asunto" required />
                     <label for="message">Mensaje:</label>
                     <textarea id="message" name="message" required></textarea>
@@ -192,8 +199,10 @@
         <h2>danielmhdev</h2>
         <p class="footer-name">&COPY; 2025 Daniel Martín Hernández - Todos los derechos reservados</p>
         <div class="social-linksFooter">
-            <a href="https://github.com/danielmhdev" aria-label="GitHub"><img src="img/github-brands white.svg" alt="GitHub" /></a>
-            <a href="https://www.linkedin.com/in/daniel-martin-hernandez-a439422a8/" aria-label="LinkedIn"><img src="img/linkedin-brands white.svg" alt="LinkedIn" /></a>
+            <a href="https://github.com/danielmhdev" aria-label="GitHub"><img src="img/github-brands white.svg"
+                    alt="GitHub" /></a>
+            <a href="https://www.linkedin.com/in/daniel-martin-hernandez-a439422a8/" aria-label="LinkedIn"><img
+                    src="img/linkedin-brands white.svg" alt="LinkedIn" /></a>
         </div>
     </footer>
 
