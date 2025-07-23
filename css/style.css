@@ -288,23 +288,6 @@
     margin: 0 auto;
 }
 
-#skills {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-}
-
-.subsectionh4-title {
-    font-family: 'RalewayBold', Arial, sans-serif;
-    background: #f5f6fa;
-    color: #315280;
-    padding: 1rem;
-    border-radius: 12px;
-    text-align: center;
-}
-
 @media screen and (max-width: 800px) {
     .about-text {
         font-size: 16px;
@@ -315,6 +298,32 @@
     }
 
 }
+
+/*Skills Section*/
+
+#skills {
+     padding: 3rem 2rem;
+    background-color: #f9fafe;
+    text-align: center;
+}
+.skills-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.subsectionh4-title {
+    font-family: 'RalewayBold', Arial, sans-serif;
+    background: #ecf1f8;
+    color: #315280;
+    padding: 1rem;
+    border-radius: 12px;
+    text-align: center;
+}
+
+
 
 /*My Proyect section*/
 
