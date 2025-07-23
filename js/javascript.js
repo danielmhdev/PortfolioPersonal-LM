@@ -18,8 +18,8 @@ nav();
 
 //COOKIES
 
-const popup = document.getElementById("cookiePopup");
-const btn = document.getElementById("acceptCookies");
+const popup = document.getElementById("cookie-popup");
+const btn = document.getElementById("accept-cookies");
 
 if (!localStorage.cookiesAccepted){
     popup.classList.add("show");
