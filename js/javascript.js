@@ -21,11 +21,11 @@ nav();
 const popup = document.getElementById("cookie-popup");
 const btn = document.getElementById("accept-cookies");
 
-if (!localStorage.cookiesAccepted){
+if (!localStorage.cookiesAccepted) {
     popup.classList.add("show");
 }
 
-btn.addEventListener("click",function(){
+btn.addEventListener("click", function () {
     localStorage.cookiesAccepted = "true";
     popup.classList.remove("show");
 });

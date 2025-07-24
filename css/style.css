@@ -302,10 +302,11 @@
 /*Skills Section*/
 
 #skills {
-     padding: 3rem 2rem;
+    padding: 3rem 2rem;
     background-color: #f9fafe;
     text-align: center;
 }
+
 .skills-section {
     display: flex;
     justify-content: center;
