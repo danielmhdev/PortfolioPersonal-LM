@@ -573,6 +573,16 @@
     display: block;
 }
 
+/* Botón rechazar: colores distintos */
+.reject-btn {
+    background-color: #ffe6e5;
+    color: #ba2525;
+}
+
+.reject-btn:hover {
+    background-color: #ffb3b0;
+}
+
 @media screen and (max-width: 800px) {
     .cookie-popup {
         font-size: 12px;

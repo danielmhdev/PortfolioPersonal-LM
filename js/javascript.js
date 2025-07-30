@@ -20,12 +20,19 @@ nav();
 
 const popup = document.getElementById("cookie-popup");
 const btn = document.getElementById("accept-cookies");
+const rejectBtn = document.getElementById("reject-cookies");
 
-if (!localStorage.cookiesAccepted) {
+
+if (!localStorage.cookiesAccepted && !localStorage.cookiesRejected) {
     popup.classList.add("show");
 }
 
 btn.addEventListener("click", function () {
     localStorage.cookiesAccepted = "true";
+    popup.classList.remove("show");
+});
+
+rejectBtn.addEventListener("click", function () {
+    localStorage.cookiesRejected = "true";
     popup.classList.remove("show");
 });
